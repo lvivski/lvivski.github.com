@@ -1,0 +1,200 @@
+html {
+    height: 100%;
+}
+
+body {
+    font: 62.5%/1.5 Georgia, "Times New Roman", serif;
+    color: #444;
+    word-spacing: 0.1em;
+    display:table;
+    width: 500px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+a,
+a:link,
+a:visited {
+    color: #05c;
+}
+
+a:hover,
+a:visited:hover {
+    color: #c00;
+}
+
+.vcard {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.url {
+    padding-left: 20px;
+    background: url(sprite.png) 0 2px no-repeat;
+}
+
+.fn {
+    padding-left: 0;
+    background: none;
+}
+
+.linkedin {
+    background-position: 0 -62px;
+}
+
+.yandex {
+    background-position: 0 -94px;
+}
+
+.twitter {
+    background-position: 0 -29px;
+}
+
+.github {
+    background-position: 0 2px;
+}
+
+.skype {
+     background-position: 0 -158px;
+}
+
+.email {
+    background-position: 0 -127px;
+}
+
+.tel {
+    margin-left: 10px;
+}
+
+
+.pseudo {
+    border-bottom: 1px dotted;
+    vertical-align: baseline;
+    line-height: .95;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* develop */
+
+.develop :before,
+.develop :after {
+    position: absolute;
+    font-family: monospace;
+    font-size: 1.2em;
+    color: #666;
+}
+.develop h1:before {
+    content: '<h1>';
+    margin-left: -2.8em;
+}
+.develop h1:after {
+    content: '</h1>';
+    margin-left: .3em;
+}
+
+.develop p:before {
+    content: '<p>';
+    margin-left: -2.3em;
+}
+.develop p:after {
+    content: '</p>';
+    margin-left: .5em;
+}
+
+/* design */
+
+.design {
+    border: 1px solid #4affff;
+    border-width: 0 1px;
+}
+
+.design :before,
+.design :after {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-bottom: 1px solid #4affff;
+    display:block;
+}
+.design :before {
+    margin-top: 3px;
+}
+.design :after {
+    margin-top: -5px;
+}
+
+.design h1:before,
+.design p:before,
+.design h1:after,
+.design p:after {
+    content: '';
+}
+
+.design .tel:before {
+    content: '';
+    width: 0;
+    height: 100%;
+    border: 0;
+    border-left: 1px solid #4affff;
+    left: auto;
+    top: 0;
+    margin: 0 0 0 20px
+}
+
+/* prototype */
+
+.prototype h1,
+.prototype a,
+.prototype .contacts,
+.prototype .about {
+  color: transparent;
+  background: none;
+}
+
+.prototype :before {
+    position: absolute;
+    border: 2px solid #666;
+    margin-left: -2px;
+    margin-top: -2px;
+    padding: 5px;
+    display: block;
+    font-family: "Comic Sans", "Comic Sans MS", cursive;
+    font-size: 16px;
+    color: #444;
+}
+
+.prototype h1:before {
+    height: 20px;
+    width: 300px;
+    content: 'Heading';
+    -webkit-transform: rotate(-.5deg);
+}
+
+.prototype .about:before {
+    height: 60px;
+    width: 500px;
+    content: 'About';
+    -webkit-transform: rotate(-.2deg);
+    z-index: -1;
+}
+
+.prototype .pseudo[rel=prototype] {
+    z-index:10;
+}
+
+.prototype .contacts:before {
+    height: 90px;
+    width: 200px;
+    content: 'Contacts';
+    -webkit-transform: rotate(.3deg);
+}
+

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Yehor Lvivski</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yehor Lvivski">
+    <link rel="stylesheet" href="screen.css" media="screen, projection">
+</head>
+
+<body>
+<div class="vcard">
+
+    <h1>My name is <a class="url fn" href="http://lvivski.com">Yehor Lvivski</a>.</h1>
+
+    <p class="about">
+        I <span class="pseudo" rel="prototype">prototype</span>, <span class="pseudo" rel="design">design</span> and <span class="pseudo" rel="develop">develop</span> user interface, <a class="url linkedin " rel="me" href="http://www.linkedin.com/in/lvivski" title="Yehor Lvivski on Linkedin">work</a> at <a class="url org yandex" rel="group" href="http://yandex.com" title="Yandex">Yandex</a>, <a class="url github" title="Yehor Lvivski on Github" href="http://github.com/lvivski">contribute</a> to open source, <a rel="me" class="url twitter" href="http://twitter.com/lvivski" title="Yehor Lvivski on Twitter">write a little</a>, <span class="adr">and live in <span class="locality">Kiev</span>, <span class="country-name">Ukraine</span></span>.
+
+    <p class="contacts">
+        Contacts:<br>
+        <a rel="me" class="url email" href="&#109;&#097;&#105;&#108;&#116;&#111;:&#108;&#118;&#105;&#118;&#115;&#107;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#108;&#118;&#105;&#118;&#115;&#107;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a><br>
+        <span class="tel"><abbr class="value" title="+380631717786">+380 (63) 171 77 86</abbr></span><br>
+        <a rel="me" class="url nickname skype" href="skype:lvivski?add">lvivski</a>
+    </p>
+
+</div>
+<script>
+if (!document.getElementsByClassName) {
+  document.getElementsByClassName = function (className) {
+    var allElements = document.all
+      , foundElements = [] 
+    for (var i = 0, len = allElements.length; i < len; i++)
+      if (allElements[i].className == className)
+        foundElements.push(allElements[i])
+    return foundElements
+  }
+}
+var pseudo = document.getElementsByClassName('pseudo')
+  , addEvent = /*@cc_on'attachEvent'||@*/'addEventListener'
+  , body = document.body
+  , hasOwnPropery = {}.hasOwnProperty
+  , el
+for (var i in pseudo) if (hasOwnPropery.call(pseudo, i)) {
+  el = pseudo[i]
+  el[addEvent](/*@cc_on'onmouseenter'||@*/'mouseover', function (e) {
+      body.className = (e.target || e.srcElement).getAttribute('rel')
+  }, false)
+  el[addEvent](/*@cc_on'onmouseleave'||@*/'mouseout', function (e) {
+      body.className = ''
+  }, false)
+}
+</script>
+<script type="text/javascript">
+var head = document.getElementsByTagName('head')[0]
+  , _gaq = [['_setAccount', 'UA-35426192-1'], ['_trackPageview']]
+  , GoSquared = {acct: "GSN-253405-U"}
+// Google Analutics
+;(function() {
+  var ga = document.createElement('script')
+  ga.type = 'text/javascript';ga.async = true
+  ga.src = '//www.google-analytics.com/ga.js'
+  head.appendChild(ga)
+}())
+// GoSquared
+;(function(w){
+  w._gstc_lt = +new Date
+  var gs = document.createElement('script')
+  gs.type = 'text/javascript';gs.async = true
+  gs.src = '//d1l6p2sc9645hc.cloudfront.net/tracker.js'
+  head.appendChild(gs)
+}(window))
+// Yandex.Metrika
+;(function (w, c) {
+  (w[c] || (w[c] = [])).push(function() {
+    try {
+      w.yaCounter17780779 = new Ya.Metrika({id:17780779, enableAll: true})
+    } catch(e) { }
+  })
+  var ym = document.createElement('script')
+  ym.type = 'text/javascript';ym.async = true
+  ym.src = '//mc.yandex.ru/metrika/watch.js'
+  head.appendChild(ym)
+}(window, "yandex_metrika_callbacks"))
+</script>
+</body>
+</html>
