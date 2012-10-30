@@ -25,30 +25,32 @@
 
 </div>
 <script>
-if (!document.getElementsByClassName) {
-  document.getElementsByClassName = function (className) {
-    var allElements = document.all
-      , foundElements = [] 
-    for (var i = 0, len = allElements.length; i < len; i++)
-      if (allElements[i].className == className)
-        foundElements.push(allElements[i])
-    return foundElements
+(function(){
+  if (!document.getElementsByClassName) {
+    document.getElementsByClassName = function (className) {
+      var allElements = document.all
+        , foundElements = [] 
+      for (var i = 0, len = allElements.length; i < len; i++)
+        if (allElements[i].className == className)
+          foundElements.push(allElements[i])
+      return foundElements
+    }
   }
-}
-var pseudo = document.getElementsByClassName('pseudo')
-  , addEvent = /*@cc_on'attachEvent'||@*/'addEventListener'
-  , body = document.body
-  , hasOwnPropery = {}.hasOwnProperty
-  , el
-for (var i in pseudo) if (hasOwnPropery.call(pseudo, i)) {
-  el = pseudo[i]
-  el[addEvent](/*@cc_on'onmouseenter'||@*/'mouseover', function (e) {
-      body.className = (e.target || e.srcElement).getAttribute('rel')
-  }, false)
-  el[addEvent](/*@cc_on'onmouseleave'||@*/'mouseout', function (e) {
-      body.className = ''
-  }, false)
-}
+  var pseudo = document.getElementsByClassName('pseudo')
+    , addEvent = /*@cc_on'attachEvent'||@*/'addEventListener'
+    , body = document.body
+    , len = pseudo.length
+    , el
+  while(len--){
+    el = pseudo[len]
+    el[addEvent](/*@cc_on'onmouseenter'||@*/'mouseover', function (e) {
+        body.className = (e.target || e.srcElement).getAttribute('rel')
+    }, false)
+    el[addEvent](/*@cc_on'onmouseleave'||@*/'mouseout', function (e) {
+        body.className = ''
+    }, false)
+  }
+}())
 </script>
 <script type="text/javascript">
 var head = document.getElementsByTagName('head')[0]
