@@ -6,156 +6,207 @@
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font: 62.5%/1.5 "PT Serif", Georgia, "Times New Roman", serif;
-    color: #444;
-    word-spacing: 0.1em;
-    display:table;
-    width: 500px;
-    height: 100%;
-    margin: 0 auto;
+  font: 62.5%/1.5 "PT Serif", Georgia, "Times New Roman", serif;
+  color: #444;
+  word-spacing: 0.1em;
+  display:table;
+  width: 500px;
+  height: 100%;
+  margin: 0 auto;
 }
 
-h1 {
-    font-weight: normal;
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+h2 + p {
+  margin-top: 0;
 }
 
 p {
-    font-size: 1.6em;
-    word-spacing: 0;
+  font-size: 1.6em;
+  word-spacing: 0;
 }
 
 a,
 a:link,
 a:visited {
-    color: #05c;
+  color: #05c;
 }
 
 a:hover,
 a:visited:hover {
-    color: #c00;
+  color: #c00;
 }
 
 .vcard {
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .url {
-    padding-left: 20px;
-    background: url(sprite.png) no-repeat;
+  padding-left: 20px;
+  background: url(sprite.png) no-repeat;
 }
 
 .fn {
-    padding-left: 0;
-    background: none;
+  padding-left: 0;
+  background: none;
 }
 
 .linkedin {
-    background-position: 0 -62px;
+  background-position: 0 -62px;
 }
 
 .yandex {
-    background-position: 0 -94px;
+  background-position: 0 -94px;
 }
 
 .twitter {
-    background-position: 0 -29px;
+  background-position: 0 -29px;
 }
 
 .github {
-    background-position: 0 2px;
+  background-position: 0 2px;
 }
 
 .skype {
-     background-position: 0 -158px;
+  background-position: 0 -158px;
 }
 
 .email {
-    background-position: 0 -127px;
+  background-position: 0 -127px;
 }
 
 .tel {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
+.timeline {
+  font-size: 1.6em;
+  margin-top: 0;
+}
+
+.timeline dt {
+  float: left;
+  width: 50px;
+}
+
+.timeline dt span {
+  float: right;
+  display: inline-block;
+  text-align: right;
+  width: 1em;
+}
+
+.timeline dt sup {
+  position: absolute;
+  margin-left: -35px;
+  margin-top: 3px;
+}
+
+.timeline dd {
+  margin-left: 70px;
+}
 
 .pseudo {
-    border-bottom: 1px dotted;
-    vertical-align: baseline;
-    line-height: .95;
-    display: inline-block;
-    cursor: pointer;
+  border-bottom: 1px dotted;
+  vertical-align: baseline;
+  line-height: .95;
+  display: inline-block;
+  cursor: pointer;
 }
 
 /* develop */
 
 .develop :before,
 .develop :after {
-    position: absolute;
-    font-family: monospace;
-    font-size: 1.2em;
-    color: #666;
+  position: absolute;
+  font-family: monospace;
+  font-size: 1.2em;
+  color: #666;
 }
 .develop h1:before {
-    content: '<h1>';
-    margin-left: -2.8em;
+  content: '<h1>';
+  margin-left: -2.8em;
 }
 .develop h1:after {
-    content: '</h1>';
-    margin-left: .3em;
+  content: '</h1>';
+  margin-left: .3em;
 }
 
 .develop p:before {
-    content: '<p>';
-    margin-left: -2.3em;
+  content: '<p>';
+  margin-left: -2.3em;
 }
 .develop p:after {
-    content: '</p>';
-    margin-left: .5em;
+  content: '</p>';
+  margin-left: .5em;
+}
+
+.develop dl:before {
+  content: '<dl>';
+  margin-left: -2.8em;
+}
+.develop dl:after {
+  content: '</dl>';
+  margin-top: -1.5em;
+  margin-left: 14em;
 }
 
 /* design */
 
 .design {
-    border: 1px solid #4affff;
-    border-width: 0 1px;
+  border: 1px solid #4affff;
+  border-width: 0 1px;
 }
 
 .design :before,
 .design :after {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    border-bottom: 1px solid #4affff;
-    display:block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border-bottom: 1px solid #4affff;
+  display:block;
 }
 .design :before {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 .design :after {
-    margin-top: -5px;
+  margin-top: -5px;
 }
 
 .design h1:before,
 .design p:before,
 .design h1:after,
-.design p:after {
-    content: '';
+.design p:after,
+.design dl:before,
+.design dl:after {
+  content: '';
 }
 
-.design .tel:before {
-    content: '';
-    width: 0;
-    height: 100%;
-    border: 0;
-    border-left: 1px solid #4affff;
-    left: auto;
-    top: 0;
-    margin: 0 0 0 20px
+.design .tel:before,
+.design .tel:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  border: 0;
+  border-left: 1px solid #4affff;
+  left: auto;
+  top: 0;
+  margin: 0 0 0 20px;
+}
+
+.design .tel:after {
+  margin: 0 0 0 70px;
 }
 
 /* prototype */
@@ -163,46 +214,61 @@ a:visited:hover {
 .prototype h1,
 .prototype a,
 .prototype .contacts,
-.prototype .about {
+.prototype .about,
+.prototype .timeline {
   color: transparent;
   background: none;
 }
 
+.prototype h2 {
+  visibility: hidden;
+}
+
 .prototype :before {
-    position: absolute;
-    border: 2px solid #666;
-    margin-left: -2px;
-    margin-top: -2px;
-    padding: 5px;
-    display: block;
-    font-family: "Comic Sans", "Comic Sans MS", cursive;
-    font-size: 16px;
-    color: #444;
+  position: absolute;
+  border: 2px solid #666;
+  margin-left: -2px;
+  margin-top: -2px;
+  padding: 5px;
+  display: block;
+  font-family: "Comic Sans", "Comic Sans MS", cursive;
+  font-size: 16px;
+  color: #444;
 }
 
 .prototype h1:before {
-    height: 20px;
-    width: 300px;
-    content: 'Heading';
-    -webkit-transform: rotate(-.5deg);
+  height: 20px;
+  width: 300px;
+  content: 'Heading';
+  -webkit-transform: rotate(-.5deg);
 }
 
 .prototype .about:before {
-    height: 60px;
-    width: 500px;
-    content: 'About';
-    -webkit-transform: rotate(-.2deg);
-    z-index: -1;
+  height: 60px;
+  width: 500px;
+  content: 'About';
+  -webkit-transform: rotate(-.2deg);
+  z-index: -1;
 }
 
 .prototype .pseudo[rel=prototype] {
-    z-index:10;
+  z-index:10;
+}
+
+.prototype .timeline:before {
+  margin-top: -2em;
+  height: 160px;
+  width: 350px;
+  content: 'Talks';
+  -webkit-transform: rotate(.3deg);
+  z-index: -1;
 }
 
 .prototype .contacts:before {
-    height: 90px;
-    width: 200px;
-    content: 'Contacts';
-    -webkit-transform: rotate(.3deg);
+  margin-top: -2em;
+  height: 90px;
+  width: 200px;
+  content: 'Contacts';
+  -webkit-transform: rotate(-.2deg);
 }
 
