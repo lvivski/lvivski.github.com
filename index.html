@@ -38,21 +38,20 @@
 (function(){
   if (!document.getElementsByClassName) {
     document.getElementsByClassName = function (className) {
-      var allElements = document.all
-        , foundElements = [] 
-      for (var i = 0, len = allElements.length; i < len; i++)
+      var allElements = document.all,
+          foundElements = [] 
+      for (var i = 0; i < allElements.length; ++i)
         if (allElements[i].className == className)
           foundElements.push(allElements[i])
       return foundElements
     }
   }
-  var pseudo = document.getElementsByClassName('pseudo')
-    , addEvent = /*@cc_on'attachEvent'||@*/'addEventListener'
-    , body = document.body
-    , len = pseudo.length
-    , el
+  var pseudo = document.getElementsByClassName('pseudo'),
+      addEvent = /*@cc_on'attachEvent'||@*/'addEventListener',
+      body = document.body,
+      len = pseudo.length
   while(len--){
-    el = pseudo[len]
+    var el = pseudo[len]
     el[addEvent](/*@cc_on'onmouseenter'||@*/'mouseover', function (e) {
         body.className = (e.target || e.srcElement).getAttribute('rel')
     }, false)
@@ -63,36 +62,26 @@
 }())
 </script>
 <script type="text/javascript">
-var head = document.getElementsByTagName('head')[0]
-  , _gaq = [['_setAccount', 'UA-35426192-1'], ['_trackPageview']]
-  , GoSquared = {acct: "GSN-253405-U"}
-// Google Analutics
-;(function() {
-  var ga = document.createElement('script')
-  ga.type = 'text/javascript';ga.async = true
-  ga.src = '//www.google-analytics.com/ga.js'
-  head.appendChild(ga)
-}())
-// GoSquared
-;(function(w){
-  w._gstc_lt = +new Date
-  var gs = document.createElement('script')
-  gs.type = 'text/javascript';gs.async = true
-  gs.src = '//d1l6p2sc9645hc.cloudfront.net/tracker.js'
-  head.appendChild(gs)
-}(window))
-// Yandex.Metrika
-;(function (w, c) {
-  (w[c] || (w[c] = [])).push(function() {
-    try {
-      w.yaCounter17780779 = new Ya.Metrika({id:17780779, enableAll: true})
-    } catch(e) { }
-  })
-  var ym = document.createElement('script')
-  ym.type = 'text/javascript';ym.async = true
-  ym.src = '//mc.yandex.ru/metrika/watch.js'
-  head.appendChild(ym)
-}(window, "yandex_metrika_callbacks"))
+var head = document.getElementsByTagName('head')[0],
+    _gaq = [['_setAccount', 'UA-35426192-1'], ['_trackPageview']],
+    _gstc_lt = +new Date,
+    GoSquared = {acct: "GSN-253405-U"},
+    yandex_metrika_callbacks = [function () {
+      try {
+        window.yaCounter17780779 = new Ya.Metrika({id:17780779, enableAll: true})
+      } catch(e) { }
+    }]
+
+script('//www.google-analytics.com/ga.js')
+script('//d1l6p2sc9645hc.cloudfront.net/tracker.js')
+script('//mc.yandex.ru/metrika/watch.js')
+    
+function script(src) {
+  var s = document.createElement('script')
+  s.type = 'text/javascript';s.async = true
+  s.src = src
+  head.appendChild(s)
+}
 </script>
 </body>
 </html>
