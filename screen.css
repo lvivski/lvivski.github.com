@@ -103,14 +103,14 @@ a:visited:hover {
 
 .timeline dt {
   float: left;
-  width: 50px;
+  width: 55px;
 }
 
 .timeline dt span {
   float: right;
   display: inline-block;
   text-align: right;
-  width: 1em;
+  width: 1.2em;
 }
 
 .timeline .year {
@@ -120,7 +120,7 @@ a:visited:hover {
 }
 
 .timeline dd {
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 .pseudo {
@@ -165,7 +165,7 @@ a:visited:hover {
 .develop dl:after {
   content: '</dl>';
   margin-top: -1.5em;
-  margin-left: 18.5em;
+  margin-left: 19em;
 }
 
 /* design */
@@ -212,7 +212,7 @@ a:visited:hover {
 }
 
 .design .tel:after {
-  margin: 0 0 0 70px;
+  margin: 0 0 0 80px;
 }
 
 /* prototype */
