@@ -265,7 +265,7 @@ a:visited:hover {
 
 .prototype .timeline:before {
   margin-top: -2em;
-  height: 160px;
+  height: 200px;
   width: 450px;
   content: 'Talks';
   -webkit-transform: rotate(.3deg);
