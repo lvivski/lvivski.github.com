@@ -1,0 +1,131 @@
+html {
+  height: 100%;
+  font: 62.5%/1.5 "ff-meta-serif-web-pro", Georgia, "Times New Roman", serif;
+}
+
+body {
+  font-size: 1.4em;
+  color: #444;
+  word-spacing: 0.1em;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h1, h2 {
+  font-family: "ff-meta-web-pro", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-size: 1em;
+  margin-bottom: .3em;
+}
+
+h3, h4 {
+  font-weight: normal;
+}
+
+h4 {
+  font-style: italic;
+  margin: .5em 0 .3em;
+}
+
+ul {
+  margin-top: 0;
+}
+
+header {
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+}
+
+article {
+  vertical-align: top;
+  display: inline-block;
+  width: 35%;
+  height: 100%; 
+  padding: 0 20px;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #008ACE;
+}
+
+a:hover {
+  color: #BB3333;
+}
+
+.avatar {
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  display: inline-block;
+  background: #fad755;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 100px;
+  pointer-events: none;
+}
+
+.media {
+  text-align: justify;
+  }
+  .media:after {
+    display: inline-block;
+    content: '';
+    width: 100%;
+}
+
+a.social {
+  width: 1.7em;
+  height: 1.7em;
+  line-height: 1.7em;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+  -webkit-transition: .2s;
+  }
+  .social:hover {
+  color: #fefefe;
+}
+
+.icon-twitter {
+  color: #2daae2;
+  }
+  .icon-twitter:hover {
+    background: #2daae2;
+}
+
+.icon-github {
+  color: #555;
+  }
+  .icon-github:hover {
+    background: #555;
+}
+
+.icon-linkedin {
+  color: #006699;
+  }
+  .icon-linkedin:hover {
+    background: #006699;
+}
+
+.icon-envelope-alt {
+  color: #da3738;
+  }
+  .icon-envelope-alt:hover {
+    background: #da3738;
+}
