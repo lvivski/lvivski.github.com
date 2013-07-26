@@ -3,14 +3,23 @@
 html {
   height: 100%;
   font: 62.5%/1.5 "PT Serif", Georgia, "Times New Roman", serif;
+  background: #EFEEED;
 }
 
 body {
   font-size: 1.4em;
   color: #444;
   padding: 0;
-  margin: 0;
-  overflow-y: auto;
+  width: 700px;
+  margin: 0 auto;
+  background: #fefefe;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 150px rgba(0,0,0,.1);
 }
 
 h1 {
@@ -48,7 +57,6 @@ header {
 article {
   vertical-align: top;
   display: inline-block;
-  width: 35%;
   height: 100%; 
   padding: 0 20px;
 }
