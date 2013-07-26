@@ -3,7 +3,7 @@
 html {
   height: 100%;
   font: 62.5%/1.5 "PT Serif", Georgia, "Times New Roman", serif;
-  background: #EFEEED;
+  background: #FEFEFE;
 }
 
 body {
@@ -12,7 +12,6 @@ body {
   padding: 0;
   width: 700px;
   margin: 0 auto;
-  background: #fefefe;
   position: absolute;
   left: 50%;
   top: 50%;
