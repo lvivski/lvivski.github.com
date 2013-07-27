@@ -137,9 +137,8 @@ a.social {
     background: #da3738;
 }
 
-.at {
+.at,
+a[rel=nofollow] {
   font-size: .8em;
-  vertical-align: top;
-  line-height: 1.9;
-  opacity: .9;
+  opacity: .5;
 }
