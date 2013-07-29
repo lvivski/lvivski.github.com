@@ -142,3 +142,31 @@ a[rel=nofollow] {
   font-size: .8em;
   opacity: .5;
 }
+
+
+@media (max-width: 700px) {
+  body {
+    width: auto;
+    margin: 0 auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    transform: none;
+    position: static;
+  }
+  
+  hgroup {
+    overflow: hidden;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  header, article {
+    display: block;
+  }
+  
+  .avatar {
+    display: none;
+  }
+}
