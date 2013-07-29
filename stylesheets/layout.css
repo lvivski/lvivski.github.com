@@ -169,4 +169,8 @@ a[rel=nofollow] {
   .avatar {
     display: none;
   }
+  
+  .media:after {
+    content: '';
+  }
 }
