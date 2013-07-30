@@ -137,6 +137,27 @@ a.social {
     background: #da3738;
 }
 
+.icon-dribbble {
+  color: #f26798;
+  }
+  .icon-dribbble:hover {
+    background: #f26798;
+}
+
+.icon-facebook {
+  color: #3b5997;
+  }
+  .icon-facebook:hover {
+    background: #3b5997;
+}
+
+.icon-google-plus {
+  color: #dd4d38;
+  }
+  .icon-google-plus:hover {
+    background: #dd4d38;
+}
+
 .at,
 a[rel=nofollow] {
   font-size: .8em;
