@@ -14,7 +14,6 @@ body {
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   box-shadow: 0 0 150px rgba(0,0,0,.1);
 }
@@ -104,6 +103,7 @@ a.social {
   text-align: center;
   font-size: 20px;
   -webkit-transition: .2s;
+  transition: .2s;
   border: 0;
   }
   .social:hover {
@@ -179,7 +179,6 @@ a[rel=nofollow] {
     width: auto;
     margin: 0 auto;
     -webkit-transform: none;
-    -moz-transform: none;
     transform: none;
     position: static;
   }
