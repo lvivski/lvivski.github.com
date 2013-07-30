@@ -54,7 +54,7 @@ article {
   vertical-align: top;
   display: inline-block;
   height: 100%; 
-  padding: 5px 25px;
+  padding: 5px 25px 0;
 }
 
 ul {
@@ -87,6 +87,7 @@ a:hover {
 
 .media {
   text-align: justify;
+  height: 5em;
   }
   .media:after {
     display: inline-block;
@@ -124,10 +125,10 @@ a.social {
 }
 
 .icon-linkedin {
-  color: #006699;
+  color: #007baf;
   }
   .icon-linkedin:hover {
-    background: #006699;
+    background: #007baf;
 }
 
 .icon-envelope-alt {
@@ -157,6 +158,14 @@ a.social {
   .icon-google-plus:hover {
     background: #dd4d38;
 }
+
+.icon-skype {
+  color: #00aff0;
+  }
+  .icon-skype:hover {
+    background: #00aff0;
+}
+
 
 .at,
 a[rel=nofollow] {
