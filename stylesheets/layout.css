@@ -87,8 +87,12 @@ a:hover {
 }
 
 .media {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
   text-align: justify;
-  height: 5em;
+  line-height: 0;
+  font-size: 0;
   }
   .media:after {
     display: inline-block;
@@ -203,6 +207,10 @@ a[rel=nofollow] {
   
   .media {
     text-align: center;
+    position: static;
+    width: auto;
+    font-size: inherit;
+    line-height: inherit;
     }
     .media:after {
       content: '';
