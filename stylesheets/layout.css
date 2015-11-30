@@ -100,7 +100,7 @@ a:hover {
     width: 100%;
 }
 
-a.social {
+a.fa {
   width: 1.7em;
   height: 1.7em;
   line-height: 1.7em;
@@ -112,63 +112,70 @@ a.social {
   transition: .2s;
   border: 0;
   }
-  .social:hover {
+  .fa:hover {
   color: #fefefe;
 }
 
-.icon-twitter {
+.fa-twitter {
   color: #2daae2;
   }
-  .icon-twitter:hover {
+  .fa-twitter:hover {
     background: #2daae2;
 }
 
-.icon-github {
+.fa-github {
   color: #555;
   }
-  .icon-github:hover {
+  .fa-github:hover {
     background: #555;
 }
 
-.icon-linkedin {
+.fa-bitbucket {
+  color: #555;
+  }
+  .fa-bitbucket:hover {
+    background: #555;
+}
+
+.fa-linkedin {
   color: #007baf;
   }
-  .icon-linkedin:hover {
+  .fa-linkedin:hover {
     background: #007baf;
 }
 
-.icon-envelope-alt {
+.fa-envelope-o {
   color: #da3738;
   }
-  .icon-envelope-alt:hover {
+  .fa-envelope-o:hover {
     background: #da3738;
 }
 
-.icon-dribbble {
+.fa-dribbble {
   color: #f26798;
   }
-  .icon-dribbble:hover {
+  .fa-dribbble:hover {
     background: #f26798;
 }
 
-.icon-facebook {
+.fa-facebook {
   color: #3b5997;
   }
-  .icon-facebook:hover {
+  .fa-facebook:hover {
     background: #3b5997;
 }
 
-.icon-google-plus {
+.fa-google-plus {
   color: #dd4d38;
   }
-  .icon-google-plus:hover {
+  .fa-google-plus:hover {
     background: #dd4d38;
 }
 
-.icon-skype {
+.fa-skype {
   color: #00aff0;
   }
-  .icon-skype:hover {
+  .fa-skype:hover {
     background: #00aff0;
 }
 
