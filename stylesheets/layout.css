@@ -130,22 +130,19 @@ a.fa {
     background: #555;
 }
 
-.fa-bitbucket {
-  color: #555;
+.fa-instagram {
+  color: #012;
   }
-  .fa-bitbucket:hover {
-    background: #555;
-}
-
-.fa-linkedin {
-  color: #007baf;
-  }
-  .fa-linkedin:hover {
-    background: #007baf;
+  .fa-instagram:hover {
+    background: #012;
 }
 
 .fa-envelope-o {
   color: #da3738;
+  line-height: 1.5em !important;
+  }
+  .fa-envelope-o:before {
+    font-size: .85em;
   }
   .fa-envelope-o:hover {
     background: #da3738;
