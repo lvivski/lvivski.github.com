@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  font: 62.5%/1.5 "PT Serif", Georgia, "Times New Roman", serif;
+  font:400 62.5%/1.5 "Fira Sans", Helvetica, Arial, sans-serif;
   background: #FEFEFE;
 }
 
@@ -8,7 +8,7 @@ body {
   font-size: 1.4em;
   color: #444;
   padding: 0;
-  width: 700px;
+  width: 650px;
   margin: 0 auto;
   position: absolute;
   position: static\0;
@@ -16,7 +16,6 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 150px rgba(0,0,0,.1);
 }
 
 h1 {
@@ -24,7 +23,8 @@ h1 {
 }
 
 h1, h2, h4 {
-  font-family: "PT Sans Caption", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+	font-weight: 700;
 }
 
 h2 {
@@ -45,16 +45,15 @@ ul {
 }
 
 header {
-  text-align: center;
-  display: inline-block;
-  width: 150px;
+  width: 100%;
+	text-align: center;
 }
 
 article {
   vertical-align: top;
   display: inline-block;
-  height: 100%; 
-  padding: 5px 25px 0;
+  height: 100%;
+  padding: 5px 50px 0;
 }
 
 ul {
@@ -73,31 +72,8 @@ a:hover {
   border-color: rgba(187, 33, 33, 0.2);
 }
 
-.avatar {
-  width: 1.5em;
-  height: 1.5em;
-  line-height: 1.5em;
-  display: inline-block;
-  background: #fdc600;
-  color: #242320;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 100px;
-  pointer-events: none;
-}
-
 .media {
-  position: absolute;
-  bottom: 0;
-  width: 150px;
-  text-align: justify;
-  line-height: 0;
-  font-size: 0;
-  }
-  .media:after {
-    display: inline-block;
-    content: '';
-    width: 100%;
+  text-align: center;
 }
 
 a.fa {
@@ -192,31 +168,8 @@ a[rel=nofollow] {
     transform: none;
     position: static;
   }
-  
-  hgroup {
-    overflow: hidden;
-  }
-  
-  header {
-    width: 100%;
-  }
-  
-  header, article {
+
+ 	header, article {
     display: block;
-  }
-  
-  .avatar {
-    display: none;
-  }
-  
-  .media {
-    text-align: center;
-    position: static;
-    width: auto;
-    font-size: inherit;
-    line-height: inherit;
-    }
-    .media:after {
-      content: '';
   }
 }
