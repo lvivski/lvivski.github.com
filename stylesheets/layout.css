@@ -19,13 +19,13 @@ body {
 }
 
 h1, h2, h4 {
- 	font-weight: 700;
+  font-weight: 700;
 }
 
 h1 {
   font-size: 3.5em;
-	font-weight: 300;
-	margin-bottom: 0;
+  font-weight: 300;
+  margin-bottom: 0;
 }
 
 h3 {
@@ -51,7 +51,7 @@ ul {
 
 header {
   width: 100%;
-	text-align: center;
+  text-align: center;
 }
 
 article {
@@ -94,7 +94,7 @@ a.fa {
   border: 0;
   }
   .fa:hover {
-  color: #fefefe;
+    color: #fefefe;
 }
 
 .fa-twitter {
@@ -164,7 +164,6 @@ a[rel=nofollow]:not(.employer) {
   opacity: .5;
 }
 
-
 @media (max-width: 700px) {
   body {
     width: auto;
@@ -174,7 +173,7 @@ a[rel=nofollow]:not(.employer) {
     position: static;
   }
 
- 	article {
+  article {
     display: block;
   }
 }
