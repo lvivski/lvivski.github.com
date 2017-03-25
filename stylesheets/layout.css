@@ -159,7 +159,7 @@ a.fa {
 
 
 .at,
-a[rel=nofollow] {
+a[rel=nofollow]:not(.employer) {
   font-size: .8em;
   opacity: .5;
 }
