@@ -119,14 +119,14 @@ a.fa {
 }
 
 .fa-envelope-o {
-  color: #ffcc00;
+  color: #ffb400;
   line-height: 1.5em !important;
   }
   .fa-envelope-o:before {
     font-size: .85em;
   }
   .fa-envelope-o:hover {
-    background: #ffcc00;
+    background: #ffb400;
 }
 
 .fa-dribbble {
