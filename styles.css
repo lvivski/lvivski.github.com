@@ -81,7 +81,7 @@ a:hover {
   text-align: center;
 }
 
-a.fa {
+a.fab {
   width: 1.7em;
   height: 1.7em;
   line-height: 1.7em;
@@ -93,7 +93,7 @@ a.fa {
   transition: .2s;
   border: 0;
   }
-  .fa:hover {
+  .fab:hover {
     color: #fefefe;
 }
 
