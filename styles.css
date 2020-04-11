@@ -94,8 +94,8 @@ a.far {
   transition: .2s;
   border: 0;
   }
-	.fab:hover,
-	.far:hover {
+  .fab:hover,
+  .far:hover {
     color: #fefefe;
 }
 
