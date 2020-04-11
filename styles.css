@@ -81,7 +81,8 @@ a:hover {
   text-align: center;
 }
 
-a.fab {
+a.fab,
+a.far {
   width: 1.7em;
   height: 1.7em;
   line-height: 1.7em;
@@ -93,7 +94,8 @@ a.fab {
   transition: .2s;
   border: 0;
   }
-  .fab:hover {
+	.fab:hover,
+	.far:hover {
     color: #fefefe;
 }
 
