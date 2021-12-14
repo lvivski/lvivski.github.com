@@ -81,8 +81,7 @@ a:hover {
   text-align: center;
 }
 
-a.fab,
-a.far {
+a.fab, a.far {
   width: 1.7em;
   height: 1.7em;
   line-height: 1.7em;
@@ -93,82 +92,79 @@ a.far {
   -webkit-transition: .2s;
   transition: .2s;
   border: 0;
-  }
-  .fab:hover,
-  .far:hover {
-    color: #fefefe;
+}
+.fab:hover, .far:hover {
+  color: #fefefe;
 }
 
 .fa-twitter {
   color: #2daae2;
-  }
-  .fa-twitter:hover {
-    background: #2daae2;
+}
+.fa-twitter:hover {
+  background: #2daae2;
 }
 
 .fa-github {
   color: #555;
-  }
-  .fa-github:hover {
-    background: #555;
+}
+.fa-github:hover {
+  background: #555;
 }
 
 .fa-instagram {
   color: #383838;
-  }
-  .fa-instagram:hover {
-    background: #383838;
+}
+.fa-instagram:hover {
+  background: #383838;
 }
 
 .fa-envelope {
   color: #ffb400;
   line-height: 1.5em !important;
-  }
-  .fa-envelope:before {
-    font-size: .85em;
-  }
-  .fa-envelope:hover {
-    background: #ffb400;
+}
+.fa-envelope:before {
+  font-size: .85em;
+}
+.fa-envelope:hover {
+  background: #ffb400;
 }
 
 .fa-dribbble {
   color: #f26798;
-  }
-  .fa-dribbble:hover {
-    background: #f26798;
+}
+.fa-dribbble:hover {
+  background: #f26798;
 }
 
 .fa-facebook {
   color: #3b5997;
-  }
-  .fa-facebook:hover {
-    background: #3b5997;
+}
+.fa-facebook:hover {
+  background: #3b5997;
 }
 
 .fa-google-plus {
   color: #dd4d38;
-  }
-  .fa-google-plus:hover {
-    background: #dd4d38;
+}
+.fa-google-plus:hover {
+  background: #dd4d38;
 }
 
 .fa-skype {
   color: #00aff0;
-  }
-  .fa-skype:hover {
-    background: #00aff0;
+}
+.fa-skype:hover {
+  background: #00aff0;
 }
 
 .fa-linkedin {
   color: #0077B5;
-  }
-  .fa-linkedin:hover {
-    background: #0077B5;
+}
+.fa-linkedin:hover {
+  background: #0077B5;
 }
 
-
-.at,
-a[rel=nofollow]:not(.employer) {
+.at, a[rel=nofollow]:not(.employer) {
   font-size: .8em;
   opacity: .5;
 }
